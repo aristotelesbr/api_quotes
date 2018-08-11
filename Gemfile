@@ -51,6 +51,8 @@ group :test do
   gem 'factory_bot_rails'
   # Faker, a port of Data::Faker from Perl, is used to easily generate fake data: names, addresses, phone numbers, etc.
   gem 'faker'
+  # Making tests easy on the fingers and eyes
+  gem 'shoulda-matchers', '~> 3.1'
 end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
