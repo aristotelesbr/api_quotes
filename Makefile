@@ -20,4 +20,4 @@ fix:
 
 # Test suit
 test:
-	@docker-compose run --rm web bundle exec rspec
+	@docker-compose run --rm web bundle exec rspec $(ARGS)
