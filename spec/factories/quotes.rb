@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :product do
+  factory :quote do
     quote { Faker::Lorem.sentence(2) }
     author { Faker::Name.name }
     author_about { Faker::Internet.url }
