@@ -53,6 +53,9 @@ RSpec.configure do |config|
   end
   # FactoryBot setings
   config.include FactoryBot::Syntax::Methods
+
+  # RequestHelper support
+  config.include RequestSpecHelper
 end
 
 # Shoulda Matchers setings
