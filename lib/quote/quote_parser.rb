@@ -13,7 +13,7 @@ class QuoteParser
           quote:            quote.css('span.text').text,
           author:           quote.css('small.author').text,
           author_about:     'http://quotes.toscrape.com' + quote.css('a')[0]['href'],
-          tags:             [quote.css('meta')[0]['content']]
+          tags:             quote.css('meta')[0]['content'].split(',')
         }
       end
     end
