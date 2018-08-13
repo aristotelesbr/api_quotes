@@ -3,13 +3,13 @@
 require 'rails_helper'
 
 RSpec.describe 'Quote API', type: :request do
-  let(:headers) do
-    {
-      'Content-Type' => 'application/json'
-    }
-  end
-
   describe 'GET api/v1/quotes' do
+    let(:headers) do
+      {
+        'Content-Type' => 'application/json',
+        'Authorization' => 'Token mysecret'
+      }
+    end
     context 'when filter params is send' do
       let!(:first_quote) { create(:quote, tags: %w[dev ror]) }
       let!(:second_quote) { create(:quote, tags: %w[dev mongoDb JS]) }
